@@ -1,0 +1,88 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <title>Playa Juan</title>
+    <meta name="viewport" content="width=1400px, initial-scale=1.0">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+</head>
+
+<body>
+
+<div class="left_panel">
+
+    <h3>PlayaJuan</h3>
+
+    <div id="current_date"></div>
+
+    <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+    </script>
+
+
+    <p>Cesta: <span id="shopping_cat_value">0</span>€</p>
+
+
+    <p></p>
+    <p></p>
+    <button class="button" onclick="handle_shopping_cart_amount(6)"> + 6€</button>
+    <br></br>
+    <button class="button" onclick="handle_shopping_cart_amount(1)"> + 1€</button>
+    <p></p>
+    <p></p>
+    <p></p>
+    <button class="button" onclick="enviarcesta()">Enviar</button>
+    <br></br>
+    <button class="button" onclick="reset_shopping_cart_amount()">Reset cesta</button>
+    <br><br><br></br>
+    <p>
+    <p>Total: <span id="total_price_value">0</span>€</p></p>
+
+    <button class="button" onclick="handle_shopping_cart_amount(-6)">Restar -6€</button>
+    <br>
+    <button class="button" onclick="handle_shopping_cart_amount(-1)">Restar -1€
+    </button>
+
+    <button class="button" onclick="handle_cart_to_total_sold">Reset all</button>
+
+
+    <p>
+    <p></p></p>
+    <button class="button" onclick="clearClick(1)">Reset Localstorage</button>
+    </p>
+
+
+    <p>
+</div>
+
+
+<div class="beach_wrapper">
+    <div class="sunbed toggle">
+        <label class="sunbed_name"></label>
+
+        <div>
+            <form class="form">
+                <input type="text" class="customer_name">
+            </form>
+        </div>
+    </div>
+</div>
+
+<button onclick="$.fancybox.open($('#comments'))">Abrir comentarios</button>
+
+<textarea name="" id="comments" cols="30" rows="10" style="display: none"></textarea>
+
+<link rel="stylesheet" href="./app.css">
+<script src="app.js"></script>
+</body>
+</html>
+

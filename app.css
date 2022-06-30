@@ -1,0 +1,204 @@
+.beach_wrapper {
+    width: 80%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 120px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 90px 90px 90px 90px 90px 110px 100px 90px;
+    gap: 0px 0px;
+    float: right;
+}
+
+body {
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    transform-origin: top left;
+    font-family: Tahoma, sans-serif;
+    background: #CEEFF1;
+    margin-left: 18px;
+    margin-right: auto;
+}
+
+.left_panel {
+    width: 20%;
+    float: left;
+}
+
+.h3 { /*no funciona */
+    display: inline-block;
+    align-items: right;
+}
+
+.zoom {
+    zoom: 20%;
+}
+
+.sunbed {
+    width: 70px;
+    height: 40px;
+    border: 2px solid;
+    color: orange;
+    border-color: black;
+    background: green;
+    text-align: center;
+    display: inline-block;
+    font-family: sans-serif;
+    margin-left: 12px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.sunbed:nth-of-type(1) {
+    background: orange;
+}
+
+.sunbed .sunbed_name {
+    color: black;
+}
+
+.sunbed.step1 {
+    background: LightSeaGreen;
+    /*ocupado*/
+}
+
+.sunbed.step2 {
+    background: red;
+    /*pagado*/
+}
+
+.sunbed.step3 {
+    background: linear-gradient(to left, LightSeaGreen 50%, DarkCyan 50%);
+    /*ocupado con 3 hamacas cada lado*/
+}
+
+.sunbed.step4 {
+    background: linear-gradient(to left, LightSeaGreen 50%, green 50%);
+    /*ocupado 1 persona sola*/
+}
+
+
+.sunbed.step5 {
+    background: orange;
+    /*hamaca off*/
+
+}
+
+.sunbed.step6 {
+    background: green;
+}
+
+.form input {
+    background-color: #BCE5E7;
+    border: none;
+    border-bottom: 1px solid green;
+    text-align: center;
+    zoom: 100%;
+    touch-action: none;
+}
+
+.especiales {
+    background: orange;
+}
+
+.desconectados {
+
+    visibility: hidden;
+
+}
+
+.primerafila {
+    width: 75px;
+    height: 45px;
+    border-radius: 30px;
+}
+
+
+.h1 {
+    margin-top: -50px;
+}
+
+form {
+    /*Codigo centrado formulario */
+    margin-top: 40px;
+    border: 0;
+    text-align: center;
+    padding: 0;
+}
+
+.form input {
+    width: 100%;
+}
+
+
+/* To check if do something */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1px;
+}
+
+label {
+    /*Tamaño y alineacion uniforme*/
+    display: inline-block;
+    width: 7px;
+    text-align: center;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    widht: 7px;
+    box-sizing: border-box;
+    border: 1px solid #999
+
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-family: Tahoma;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #e8bb4a;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 4px #999;
+
+}
+
+.button:hover {
+    background-color: #b89232
+}
+
+.button:active {
+    background-color: #cfb063;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.sunbed:nth-of-type(1):before,
+.sunbed:nth-of-type(13):before,
+.sunbed:nth-of-type(25):before,
+.sunbed:nth-of-type(37):before
+{
+    content: '1';
+    position: absolute;
+    right: 130%;
+    font-size: 30px;
+    color: red;
+}
+
+.sunbed:nth-of-type(13):before {
+    content: '2';
+}
+
+.sunbed:nth-of-type(25):before {
+    content: '3'
+}
