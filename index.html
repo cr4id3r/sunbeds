@@ -37,30 +37,40 @@
     <button class="button" onclick="handle_shopping_cart_amount(6)"> + 6€</button>
     <br></br>
     <button class="button" onclick="handle_shopping_cart_amount(1)"> + 1€</button>
+  <br></br><button class="button" onclick="handle_shopping_cart_amount(12)"> + 12€</button>
+    <br></br>
+    
     <p></p>
     <p></p>
     <p></p>
     <button class="button" onclick="enviarcesta()">Enviar</button>
-    <br></br>
+    <br></br><br></br>
     <button class="button" onclick="reset_shopping_cart_amount()">Reset cesta</button>
     <br><br><br></br>
     <p>
     <p>Total: <span id="total_price_value">0</span>€</p></p>
+<br></br>
+<button onclick="$.fancybox.open($('#comments'))">Abrir comentarios</button>
 
+<textarea name="" id="comments" cols="30" rows="10" style="display: none"></textarea>
+<br></br><br></br>
     <button class="button" onclick="handle_shopping_cart_amount(-6)">Restar -6€</button>
     <br>
     <button class="button" onclick="handle_shopping_cart_amount(-1)">Restar -1€
     </button>
 
-    <button class="button" onclick="handle_cart_to_total_sold">Reset all</button>
-
+    
 
     <p>
     <p></p></p>
     <button class="button" onclick="clearClick(1)">Reset Localstorage</button>
     </p>
+    <button class="button" onclick="sunbed_color">Reset Colors</button>
 
 
+<button class="btn btn-outline-secondary btn-sm" id="exportHistory" onclick="exportHistory()">Export History</button > 
+
+<a id="exportHistoryLink" style="display: none;">Export</a>
     <p>
 </div>
 
@@ -76,10 +86,7 @@
         </div>
     </div>
 </div>
-
-<button onclick="$.fancybox.open($('#comments'))">Abrir comentarios</button>
-
-<textarea name="" id="comments" cols="30" rows="10" style="display: none"></textarea>
+<br></br>
 
 <link rel="stylesheet" href="./app.css">
 <script src="app.js"></script>
