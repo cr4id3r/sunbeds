@@ -6,7 +6,6 @@
     grid-template-rows: 90px 90px 90px 90px 90px 110px 100px 90px;
     gap: 0px 0px;
     float: right;
-    
 }
 
 body {
@@ -20,14 +19,16 @@ body {
     margin-right: auto;
     touch-action: manipulation;
     pointer-events: none;
+  
 }
-
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;}
 
 .left_panel {
     width: 20%;
     float: left;
-  
 }
+
 
 .h3 { /*no funciona */
     display: inline-block;
