@@ -21,8 +21,9 @@ body {
     pointer-events: none;
   
 }
-.disable-dbl-tap-zoom {
-  touch-action: manipulation;}
+ * {
+      touch-action: manipulation;
+  }
 
 .left_panel {
     width: 20%;
