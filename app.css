@@ -18,7 +18,7 @@ body {
     margin-left: 18px;
     margin-right: auto;
     touch-action: manipulation;
-    pointer-events: none;
+    
   
 }
  * {
