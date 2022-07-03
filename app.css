@@ -17,7 +17,7 @@ body {
     background: #CEEFF1;
     margin-left: 18px;
     margin-right: auto;
-    touch-action: manipulation;
+   
   
 }
 .disable-dbl-tap-zoom {
