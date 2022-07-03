@@ -3,7 +3,7 @@
     max-width: 100%;
     display: grid;
     grid-template-columns: 100px 100px 120px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-    grid-template-rows: 110px 110px 110px 110px 110px 110px 110px 110px;
+    grid-template-rows: 130px 130px 130px 130px 130px 130px 130px 130px;
     gap: 0px 0px;
     float: right;
 }
@@ -126,7 +126,7 @@ body {
 
 form {
     /*Codigo centrado formulario */
-    margin-top: 45px;
+    margin-top: 50px;
     border: 0;
     text-align: center;
     padding: 0;
