@@ -6,7 +6,7 @@
     grid-template-rows: 90px 90px 90px 90px 90px 110px 100px 90px;
     gap: 0px 0px;
     float: right;
-     touch-action: manipulation;
+    
 }
 
 body {
@@ -19,7 +19,7 @@ body {
     margin-left: 18px;
     margin-right: auto;
     touch-action: manipulation;
-   
+    pointer-events: none
   
 
 
