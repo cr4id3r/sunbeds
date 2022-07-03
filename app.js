@@ -140,7 +140,7 @@ var SunbedController = function() {
             $("#total_price_value").html(total_sold);
         },
 
-        reset_local_storage_except_customers: function () {
+        reset_local_storage_except_customers: function () {           
             Object.keys(localStorage).forEach(function (local_key) {
                 if (local_key.indexOf('customer_name') === -1) {
                     localStorage.removeItem(local_key);
@@ -160,3 +160,27 @@ var SunbedController = function() {
 }();
 
 SunbedController.init();
+
+//exportar 
+
+function exportHistory() {  
+    console.log("started"); 
+    var _myArray = JSON.stringify(localStorage , null, 4); //indentation in json format, human readable
+
+
+    //Note: We use the anchor tag here instead button.
+    var vLink = document.getElementById('exportHistoryLink');
+
+    var vBlob = new Blob([_myArray], {type: "octet/stream"});
+    vName = 'working_history_' + todayDate() + '.json';
+    vUrl = window.URL.createObjectURL(vBlob);
+    console.log(vLink);
+
+    vLink.setAttribute('href', vUrl);
+    vLink.setAttribute('download', vName );
+
+    //Note: Programmatically click the link to download the file
+    vLink.click();
+
+    console.log("finished");    
+}
