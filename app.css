@@ -19,14 +19,14 @@ body {
     margin-left: 18px;
     margin-right: auto;
     touch-action: manipulation;
-    pointer-events: none
+    pointer-events: none;
   
 
 
 .left_panel {
     width: 20%;
     float: left;
-  touch-action: manipulation;
+  
 }
 
 .h3 { /*no funciona */
