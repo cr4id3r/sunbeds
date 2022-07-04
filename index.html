@@ -65,15 +65,13 @@
     <p></p></p>
     <button class="button" onclick="clearClick(1)">Reset Localstorage</button>
     </p>
-    <button class="button" onclick="sunbed_color">Reset Colors</button>
+    <button class="button" onclick="SunbedController.reset_local_storage_except_customers()">Reset Colors</button>
 
 
-<button class="btn btn-outline-secondary btn-sm" id="exportHistory" onclick="exportHistory()">Export History</button > 
 
-<a id="exportHistoryLink" style="display: none;">Export</a>
-    <p>
 </div>
 
+  
 
 <div class="beach_wrapper">
     <div class="sunbed toggle">
@@ -81,7 +79,7 @@
 
         <div>
             <form class="form">
-                <input type="text" class="customer_name">
+                <input type="text" class="customer_name" >
             </form>
         </div>
     </div>
