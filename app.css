@@ -207,8 +207,9 @@ input, textarea {
        content: '8';
     position: absolute;
     right: 130%;
-    font-size: 30px;
+    font-size: 50px;
     color: red;
+   margin-bottom:30px;
   }
 .sunbed:nth-of-type(13):before,
 .sunbed:nth-of-type(25):before,
@@ -217,7 +218,7 @@ input, textarea {
     content: '5';
     position: absolute;
     right: 130%;
-    font-size: 30px;
+    font-size: 50px;
     color: red;
 }
 
@@ -233,21 +234,21 @@ input, textarea {
      content: '4';
     position: absolute;
     right: 130%;
-    font-size: 30px;
+    font-size: 50px;
     color: red;
   }
 .sunbed:nth-of-type(61):before {
     content: '3';
     position: absolute;
     right: 130%;
-    font-size: 30px;
+    font-size: 50px;
     color: red;
   }
 .sunbed:nth-of-type(73):before {
     content: '2';
     position: absolute;
     right: 130%;
-    font-size: 30px;
+    font-size: 50px;
     color: red;
   
   }
@@ -255,7 +256,7 @@ input, textarea {
     content: '1';
     position: absolute;
     right: 130%;
-    font-size: 30px;
+    font-size: 50px;
     color: red;
   }
 
