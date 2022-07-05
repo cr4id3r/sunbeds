@@ -15,10 +15,10 @@ body {
     transform-origin: top left;
     font-family: Tahoma, sans-serif;
     background: #CEEFF1;
-    margin-left: 18px;
+    margin-left: 40px;
     margin-right: auto;
     touch-action: manipulation;
-    font-size:30px;
+    font-size:40px;
     text-align: center;
   
 }
@@ -29,12 +29,13 @@ body {
 .left_panel {
     width: 20%;
     float: left;
+    
 }
 
 
-.h3 { /*no funciona */
+.header { /*no funciona */
     display: inline-block;
-    align-items: right;
+    align-items: center;
     
 }
 
@@ -52,7 +53,8 @@ body {
     text-align: center;
     display: inline-block;
     font-family: sans-serif;
-    margin-left: 12px;
+    font-size:22px;
+    margin-left: 120px;
     margin-top: 15px;
     position: relative;
 }
@@ -108,7 +110,7 @@ body {
 }
 
 .shopping_cat_value{
-  font-size:30px;
+  font-size:80px;
   
 }
 
@@ -178,7 +180,7 @@ input, textarea {
     display: inline-block;
     padding: 15px 25px;
     font-family: Tahoma;
-    font-size: 35px;
+    font-size: 45px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -251,6 +253,76 @@ input, textarea {
   }
 .sunbed:nth-of-type(85):before {
     content: '1';
+    position: absolute;
+    right: 130%;
+    font-size: 30px;
+    color: red;
+  }
+
+.sunbed:nth-of-type(97):before {
+
+       content: '8';
+
+    position: absolute;
+
+    right: 130%;
+
+    font-size: 30px;
+
+    color: red;
+
+  }
+
+.sunbed:nth-of-type(109):before {
+       content: '7';
+    position: absolute;
+    right: 130%;
+    font-size: 30px;
+    color: red;
+  }
+
+.sunbed:nth-of-type(121):before {
+       content: '6';
+    position: absolute;
+    right: 130%;
+    font-size: 30px;
+    color: red;
+  }
+
+.sunbed:nth-of-type(133):before {
+       content: '5';
+    position: absolute;
+    right: 130%;
+    font-size: 30px;
+    color: red;
+  }
+
+.sunbed:nth-of-type(145):before {
+       content: '4';
+    position: absolute;
+    right: 130%;
+    font-size: 30px;
+    color: red;
+  }
+
+.sunbed:nth-of-type(157):before {
+       content: '3';
+    position: absolute;
+    right: 130%;
+    font-size: 30px;
+    color: red;
+  }
+
+.sunbed:nth-of-type(169):before {
+       content: '2';
+    position: absolute;
+    right: 130%;
+    font-size: 30px;
+    color: red;
+  }
+
+.sunbed:nth-of-type(181):before {
+       content: '1';
     position: absolute;
     right: 130%;
     font-size: 30px;
