@@ -2,8 +2,8 @@
     width: 80%;
     max-width: 100%;
     display: grid;
-    grid-template-columns: 100px 100px 120px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-    grid-template-rows: 130px 130px 130px 130px 130px 130px 130px 130px;
+    grid-template-columns: 100px 100px 130px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 130px 130px 130px 130px 130px 130px 130px 450px 130px 130px 130px 130px 130px 130px 130px 130px;;
     gap: 0px 0px;
     float: right;
 }
@@ -18,7 +18,8 @@ body {
     margin-left: 18px;
     margin-right: auto;
     touch-action: manipulation;
-    
+    font-size:30px;
+    text-align: center;
   
 }
  * {
@@ -34,6 +35,7 @@ body {
 .h3 { /*no funciona */
     display: inline-block;
     align-items: right;
+    
 }
 
 .zoom {
@@ -101,6 +103,13 @@ body {
     text-align: center;
     zoom: 100%;
     touch-action: none;
+  
+
+}
+
+.shopping_cat_value{
+  font-size:30px;
+  
 }
 
 .especiales {
@@ -126,7 +135,7 @@ body {
 
 form {
     /*Codigo centrado formulario */
-    margin-top: 50px;
+    margin-top: 25px;
     border: 0;
     text-align: center;
     padding: 0;
@@ -169,7 +178,7 @@ input, textarea {
     display: inline-block;
     padding: 15px 25px;
     font-family: Tahoma;
-    font-size: 10px;
+    font-size: 35px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
