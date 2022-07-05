@@ -1,6 +1,6 @@
 let variable1;
 
-for (var x = 1; x < 96; x++) {
+for (var x = 1; x < 192; x++) {
     let cloned_element = $(".sunbed").first().clone();
     cloned_element.attr("id", "clon_" + x);
     cloned_element.find(".sunbed_name").html(x);
@@ -8,9 +8,9 @@ for (var x = 1; x < 96; x++) {
     $(".beach_wrapper").append(cloned_element);
 }
 
-$("#clon_1,#clon_2,#clon_3,#sunbed").addClass('especiales');
-$("#clon_10,#clon_11,#clon_22,#clon_23,#clon_34,#clon_35,#clon_46,#clon_47,#clon_58,#clon_59,#clon_70,#clon_71").addClass('desconectados');
-$("#clon_72,#clon_73,#clon_74,#clon_75,#clon_76,#clon_77,#clon_78,#clon_79,#clon_80,#clon_81,#clon_82,#clon_83,#clon_84,#clon_85,#clon_86,#clon_87,#clon_88,#clon_89,#clon_90,#clon_91,#clon_92,#clon_93,#clon_94,#clon_95").addClass('primerafila');
+$("#clon_1,#clon_2,#clon_3,#clon_13,#clon_18,#clon_25,#clon_37,#clon_49,#sunbed,#clon_97,#clon_96,#clon_98,#clon_99").addClass('especiales');
+$("#clon_11,#clon_23,#clon_35,#clon_47,#clon_59,#clon_71,#clon_107,#clon_119,#clon_131,#clon_143,#clon_155,#clon_167").addClass('desconectados');
+$("#clon_72,#clon_73,#clon_74,#clon_75,#clon_76,#clon_77,#clon_78,#clon_79,#clon_80,#clon_81,#clon_82,#clon_83,#clon_84,#clon_85,#clon_86,#clon_87,#clon_88,#clon_89,#clon_90,#clon_91,#clon_92,#clon_93,#clon_94,#clon_95,#clon_168,#clon_169,#clon_170,#clon_171,#clon_172,#clon_173,#clon_174,#clon_175,#clon_176,#clon_177,#clon_178,#clon_179,#clon_180,#clon_181,#clon_182,#clon_183,#clon_184,#clon_185,#clon_186,#clon_187,#clon_188,#clon_189,#clon_190,#clon_191").addClass('primerafila');
 
 
 //Clicking function
@@ -30,7 +30,7 @@ function reset_shopping_cart_amount() {
 function enviarcesta() {
     var actual_value = localStorage.getItem('shopping_cart');
     total_sold = parseInt(total_sold) + parseInt(actual_value);
-
+localStorage.setItem('total_sold',total_sold);
     console.log(actual_value);
     $("#totalcesta").html(total_sold);
     reset_shopping_cart_amount();
@@ -160,29 +160,4 @@ var SunbedController = function() {
 }();
 
 SunbedController.init();
-
-//exportar 
-
-function exportHistory() {  
-    console.log("started"); 
-    var _myArray = JSON.stringify(localStorage , null, 4); //indentation in json format, human readable
-
-
-    //Note: We use the anchor tag here instead button.
-    var vLink = document.getElementById('exportHistoryLink');
-
-    var vBlob = new Blob([_myArray], {type: "octet/stream"});
-    vName = 'working_history_' + date.now() + '.json';
-    vUrl = window.URL.createObjectURL(vBlob);
-    console.log(vLink);
-
-    vLink.setAttribute('href', vUrl);
-    vLink.setAttribute('download', vName );
-
-    //Note: Programmatically click the link to download the file
-    vLink.click();
-
-    console.log("finished");    
-}
-
 
