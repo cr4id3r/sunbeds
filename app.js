@@ -60,6 +60,7 @@ var SunbedController = function() {
             this.restore_sunbeds_colors();
             this.retreive_prices();
             this.restore_comments();
+            this.restore_total_sold();
         },
 
         bind_listeners: function() {
@@ -115,6 +116,7 @@ var SunbedController = function() {
                     $(this).addClass('step' + target_step);
                     $(this).data('actual-step', target_step);
                 }
+             
             });
         },
 
@@ -155,7 +157,12 @@ var SunbedController = function() {
             if (old_comments) {
                 $("#comments").val(old_comments);
             }
-        }
+        },
+      
+      restore_total_sold: function(){
+        localStorage.getItem(total_sold);
+        localStorage.removeItem(total_sold);
+      }
     };
 }();
 
