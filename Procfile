@@ -1,1 +1,1 @@
-web: gunicorn wsgi:app
+web: gunicorn --chdir ./src wsgi:app
