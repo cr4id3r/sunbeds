@@ -1,3 +1,0 @@
-[submodule "src/blueprints/users_blueprint"]
-	path = src/blueprints/users_blueprint
-	url = https://github.com/cr4id3r/flask-users-blueprint.git
