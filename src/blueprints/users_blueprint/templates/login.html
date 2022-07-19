@@ -1,0 +1,37 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+    <style>
+        .login_form ul {
+            list-style: none;
+        }
+
+        .login_form ul li {
+            margin-bottom: 10px;
+        }
+
+        .login_form ul li label {
+            margin-right: 10px;
+        }
+    </style>
+
+    {{ form.csrf_token }}
+    <form class="login_form" method="post" action="/users/login">
+        <ul>
+            <li>
+                {{ form.email.label }}{{ form.email }}{% if form.email.errors %}{{ form.email.errors }}{% endif %}
+            </li>
+            <li>
+                {{ form.password.label }}{{ form.password }}{% if form.password.errors %}
+                    {{ form.password.errors }}{% endif %}
+            </li>
+            <li>
+                <input type="submit" value="Login">
+            </li>
+        </ul>
+        {{ form.hidden_tag() }}
+    </form>
+
+    <a href="/users/register">I'm not member, perform register</a>
+{% endblock %}

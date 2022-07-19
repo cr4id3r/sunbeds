@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+    <style>
+        .register_form ul {
+            list-style: none;
+        }
+        .register_form ul li {
+            margin-bottom: 10px;
+        }
+
+        .register_form ul li label{
+            margin-right: 10px;
+        }
+    </style>
+
+    {{ form.csrf_token }}
+    <form class="register_form" method="post" action="/users/register">
+        <legend>Register form</legend>
+        <ul>
+            <li>{{ form.email.label }}{{ form.email }}{% if form.email.errors %}{{ form.email.errors }}{% endif %}</li>
+            <li>{{ form.password.label }}{{ form.password }}{% if form.password.errors %}
+                {{ form.password.errors }}{% endif %}</li>
+            <li>{{ form.confirm.label }}{{ form.confirm }}{% if form.confirm.errors %}
+                {{ form.confirm.errors }}{% endif %}</li>
+            <li>{{ form.hidden_tag() }}</li>
+            <li><input type="submit" value="Register"></li>
+        </ul>
+    </form>
+
+{% endblock %}
