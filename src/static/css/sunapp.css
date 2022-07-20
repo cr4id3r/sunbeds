@@ -1,15 +1,14 @@
 @charset "UTF-8";
 /* line 1, ../scss/sunapp.scss */
 .beach_wrapper {
-  width: 80%;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: 100px 100px 120px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-  grid-template-rows: 90px 90px 90px 90px 90px 110px 100px 90px;
-  gap: 0px 0px;
-  float: right;
+    width: 80%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 130px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 130px 130px 130px 130px 130px 130px 130px 450px 130px 130px 130px 130px 130px 130px 130px 130px;;
+    gap: 0px 0px;
+    float: right;
 }
-
 /* line 11, ../scss/sunapp.scss */
 body {
   align-items: center;
