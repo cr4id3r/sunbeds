@@ -22,12 +22,3 @@ login_manager.init_app(app)
 import handlers
 
 check_actual_urls(app)
-
-
-@login_manager.user_loader
-def load_user(user_id):
-    found_user = get_user(id=user_id)
-    if found_user:
-        found_user = found_user.__dict__
-        UserObject = UserClass(found_user['username'], found_user['id'], active=True)
-        return UserObject
