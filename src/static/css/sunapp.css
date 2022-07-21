@@ -1,15 +1,21 @@
 @charset "UTF-8";
-/* line 1, ../scss/sunapp.scss */
-.beach_wrapper {
-    width: 80%;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 100px 100px 130px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-    grid-template-rows: 130px 130px 130px 130px 130px 130px 130px 450px 130px 130px 130px 130px 130px 130px 130px 130px;;
-    gap: 0px 0px;
-    float: right;
+/* line 2, ../scss/sunapp.scss */
+* {
+  touch-action: manipulation;
 }
-/* line 11, ../scss/sunapp.scss */
+
+/* line 6, ../scss/sunapp.scss */
+.beach_wrapper {
+  width: 80%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 100px 100px 130px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 130px 130px 130px 130px 130px 130px 130px 450px 130px 130px 130px 130px 130px 130px 130px 130px;
+  gap: 0px 0px;
+  float: right;
+}
+
+/* line 16, ../scss/sunapp.scss */
 body {
   align-items: center;
   width: 50%;
@@ -17,29 +23,37 @@ body {
   transform-origin: top left;
   font-family: Tahoma, sans-serif;
   background: #CEEFF1;
-  margin-left: 18px;
+  margin-left: 40px;
   margin-right: auto;
+  touch-action: manipulation;
+  font-size: 40px;
+  text-align: center;
 }
 
-/* line 22, ../scss/sunapp.scss */
+/* line 30, ../scss/sunapp.scss */
+* {
+  touch-action: manipulation;
+}
+
+/* line 34, ../scss/sunapp.scss */
 .left_panel {
   width: 20%;
   float: left;
 }
 
-/* line 27, ../scss/sunapp.scss */
-.h3 {
+/* line 41, ../scss/sunapp.scss */
+.header {
   /*no funciona */
   display: inline-block;
-  align-items: right;
+  align-items: center;
 }
 
-/* line 32, ../scss/sunapp.scss */
+/* line 47, ../scss/sunapp.scss */
 .zoom {
   zoom: 20%;
 }
 
-/* line 36, ../scss/sunapp.scss */
+/* line 51, ../scss/sunapp.scss */
 .sunbed {
   width: 70px;
   height: 40px;
@@ -50,57 +64,58 @@ body {
   text-align: center;
   display: inline-block;
   font-family: sans-serif;
-  margin-left: 12px;
+  font-size: 22px;
+  margin-left: 120px;
   margin-top: 15px;
   position: relative;
 }
 
-/* line 51, ../scss/sunapp.scss */
+/* line 67, ../scss/sunapp.scss */
 .sunbed:nth-of-type(1) {
   background: orange;
 }
 
-/* line 55, ../scss/sunapp.scss */
+/* line 71, ../scss/sunapp.scss */
 .sunbed .sunbed_name {
   color: black;
 }
 
-/* line 59, ../scss/sunapp.scss */
+/* line 75, ../scss/sunapp.scss */
 .sunbed.step1 {
   background: LightSeaGreen;
   /*ocupado*/
 }
 
-/* line 64, ../scss/sunapp.scss */
+/* line 80, ../scss/sunapp.scss */
 .sunbed.step2 {
   background: red;
   /*pagado*/
 }
 
-/* line 69, ../scss/sunapp.scss */
+/* line 85, ../scss/sunapp.scss */
 .sunbed.step3 {
   background: linear-gradient(to left, LightSeaGreen 50%, DarkCyan 50%);
   /*ocupado con 3 hamacas cada lado*/
 }
 
-/* line 74, ../scss/sunapp.scss */
+/* line 90, ../scss/sunapp.scss */
 .sunbed.step4 {
   background: linear-gradient(to left, LightSeaGreen 50%, green 50%);
   /*ocupado 1 persona sola*/
 }
 
-/* line 80, ../scss/sunapp.scss */
+/* line 96, ../scss/sunapp.scss */
 .sunbed.step5 {
   background: orange;
   /*hamaca off*/
 }
 
-/* line 86, ../scss/sunapp.scss */
+/* line 102, ../scss/sunapp.scss */
 .sunbed.step6 {
   background: green;
 }
 
-/* line 90, ../scss/sunapp.scss */
+/* line 106, ../scss/sunapp.scss */
 .form input {
   background-color: #BCE5E7;
   border: none;
@@ -110,56 +125,62 @@ body {
   touch-action: none;
 }
 
-/* line 99, ../scss/sunapp.scss */
+/* line 117, ../scss/sunapp.scss */
+.shopping_cat_value {
+  font-size: 80px;
+}
+
+/* line 122, ../scss/sunapp.scss */
 .especiales {
   background: orange;
 }
 
-/* line 103, ../scss/sunapp.scss */
+/* line 126, ../scss/sunapp.scss */
 .desconectados {
   visibility: hidden;
 }
 
-/* line 109, ../scss/sunapp.scss */
+/* line 132, ../scss/sunapp.scss */
 .primerafila {
   width: 75px;
   height: 45px;
   border-radius: 30px;
 }
 
-/* line 116, ../scss/sunapp.scss */
+/* line 139, ../scss/sunapp.scss */
 .h1 {
   margin-top: -50px;
 }
 
-/* line 120, ../scss/sunapp.scss */
+/* line 143, ../scss/sunapp.scss */
 form {
   /*Codigo centrado formulario */
-  margin-top: 40px;
+  margin-top: 25px;
   border: 0;
   text-align: center;
   padding: 0;
 }
 
-/* line 128, ../scss/sunapp.scss */
+/* line 151, ../scss/sunapp.scss */
 .form input {
   width: 100%;
+  height: 15px;
 }
 
 /* To check if do something */
-/* line 134, ../scss/sunapp.scss */
+/* line 158, ../scss/sunapp.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 140, ../scss/sunapp.scss */
+/* line 164, ../scss/sunapp.scss */
 form li + li {
   margin-top: 1px;
 }
 
-/* line 144, ../scss/sunapp.scss */
+/* line 168, ../scss/sunapp.scss */
 label {
   /*Tamaño y alineacion uniforme*/
   display: inline-block;
@@ -167,20 +188,20 @@ label {
   text-align: center;
 }
 
-/* line 151, ../scss/sunapp.scss */
+/* line 176, ../scss/sunapp.scss */
 input, textarea {
-  font: 1em sans-serif;
+  font: 13px sans-serif;
   widht: 7px;
   box-sizing: border-box;
   border: 1px solid #999;
 }
 
-/* line 159, ../scss/sunapp.scss */
+/* line 184, ../scss/sunapp.scss */
 .button {
   display: inline-block;
   padding: 15px 25px;
   font-family: Tahoma;
-  font-size: 10px;
+  font-size: 45px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -190,38 +211,156 @@ input, textarea {
   border: none;
   border-radius: 18px;
   box-shadow: 0 4px #999;
+  margin-right: 500px;
 }
 
-/* line 176, ../scss/sunapp.scss */
+/* line 201, ../scss/sunapp.scss */
 .button:hover {
   background-color: #b89232;
 }
 
-/* line 180, ../scss/sunapp.scss */
+/* line 205, ../scss/sunapp.scss */
 .button:active {
   background-color: #cfb063;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-/* line 186, ../scss/sunapp.scss */
-.sunbed:nth-of-type(1):before,
+/* line 211, ../scss/sunapp.scss */
+.sunbed:nth-of-type(1):before {
+  content: '8';
+  position: absolute;
+  right: 130%;
+  font-size: 50px;
+  color: red;
+  margin-bottom: 30px;
+}
+
+/* line 219, ../scss/sunapp.scss */
 .sunbed:nth-of-type(13):before,
 .sunbed:nth-of-type(25):before,
 .sunbed:nth-of-type(37):before {
+  content: '5';
+  position: absolute;
+  right: 130%;
+  font-size: 50px;
+  color: red;
+}
+
+/* line 230, ../scss/sunapp.scss */
+.sunbed:nth-of-type(13):before {
+  content: '7';
+}
+
+/* line 234, ../scss/sunapp.scss */
+.sunbed:nth-of-type(25):before {
+  content: "6";
+}
+
+/* line 238, ../scss/sunapp.scss */
+.sunbed:nth-of-type(49):before {
+  content: '4';
+  position: absolute;
+  right: 130%;
+  font-size: 50px;
+  color: red;
+}
+
+/* line 245, ../scss/sunapp.scss */
+.sunbed:nth-of-type(61):before {
+  content: '3';
+  position: absolute;
+  right: 130%;
+  font-size: 50px;
+  color: red;
+}
+
+/* line 252, ../scss/sunapp.scss */
+.sunbed:nth-of-type(73):before {
+  content: '2';
+  position: absolute;
+  right: 130%;
+  font-size: 50px;
+  color: red;
+}
+
+/* line 260, ../scss/sunapp.scss */
+.sunbed:nth-of-type(85):before {
   content: '1';
+  position: absolute;
+  right: 130%;
+  font-size: 50px;
+  color: red;
+}
+
+/* line 268, ../scss/sunapp.scss */
+.sunbed:nth-of-type(97):before {
+  content: '8';
   position: absolute;
   right: 130%;
   font-size: 30px;
   color: red;
 }
 
-/* line 198, ../scss/sunapp.scss */
-.sunbed:nth-of-type(13):before {
-  content: '2';
+/* line 282, ../scss/sunapp.scss */
+.sunbed:nth-of-type(109):before {
+  content: '7';
+  position: absolute;
+  right: 130%;
+  font-size: 30px;
+  color: red;
 }
 
-/* line 202, ../scss/sunapp.scss */
-.sunbed:nth-of-type(25):before {
-  content: "3";
+/* line 290, ../scss/sunapp.scss */
+.sunbed:nth-of-type(121):before {
+  content: '6';
+  position: absolute;
+  right: 130%;
+  font-size: 30px;
+  color: red;
+}
+
+/* line 298, ../scss/sunapp.scss */
+.sunbed:nth-of-type(133):before {
+  content: '5';
+  position: absolute;
+  right: 130%;
+  font-size: 30px;
+  color: red;
+}
+
+/* line 306, ../scss/sunapp.scss */
+.sunbed:nth-of-type(145):before {
+  content: '4';
+  position: absolute;
+  right: 130%;
+  font-size: 30px;
+  color: red;
+}
+
+/* line 314, ../scss/sunapp.scss */
+.sunbed:nth-of-type(157):before {
+  content: '3';
+  position: absolute;
+  right: 130%;
+  font-size: 30px;
+  color: red;
+}
+
+/* line 322, ../scss/sunapp.scss */
+.sunbed:nth-of-type(169):before {
+  content: '2';
+  position: absolute;
+  right: 130%;
+  font-size: 30px;
+  color: red;
+}
+
+/* line 330, ../scss/sunapp.scss */
+.sunbed:nth-of-type(181):before {
+  content: '1';
+  position: absolute;
+  right: 130%;
+  font-size: 30px;
+  color: red;
 }
